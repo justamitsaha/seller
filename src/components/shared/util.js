@@ -4,7 +4,7 @@ export const validateEmail = (mail) => {
 }
 
 export const validatePassword = (password) => {
-    return (password.length > 3);
+    return (password.length > 7);
 }
 
 export const checkPasswordMatch = (password1, password2) => {

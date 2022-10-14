@@ -12,6 +12,7 @@ const LoginComponent = () => {
     const [isFormValid, setIsFormValid] = useState(false);
     const [showError, setShowError] = useState(false);
     const [loginStatus, setLoginStatus] = useState(true);
+    const [apiError, setApiError] = useState("");
 
     const handleChange = (event) => {
         event.preventDefault();
@@ -50,11 +51,15 @@ const LoginComponent = () => {
 
     const navigate = useNavigate();
 
+    const closeMessage = (event) => {
+        setLoginStatus(true);
+    }
+
     const handleSubmit = (event) => {
         const URL = config.hostname + config.authentication + '/login'
         var payload = {
-            "password": email,
-            "userName": password
+            "email": email,
+            "password": password
         };
         const requestOptions = {
             method: 'POST',
@@ -65,14 +70,17 @@ const LoginComponent = () => {
             .then(res => res.json())
             .then(
                 (result) => {
-                    if (!result.response) {
-                        this.setState({ ['loginStatus']: false });
+                    if (result.response) {
+                        navigate('/dashboard');
                     } else {
-                        debugger;
+                        setLoginStatus(false);
+                        setApiError("Your user Id and password did not matched");
                     }
                 },
                 (error) => {
-                    navigate('/dashboard');
+                    setLoginStatus(false);
+                    setApiError("Something went wrong! Please try again later");
+
                 }
             )
     }
@@ -100,7 +108,7 @@ const LoginComponent = () => {
             </div>
 
             <div className={`alert alert-danger mt-2 alert-dismissible fade ${loginStatus ? '' : 'show'}`} role="alert">
-                <strong>Login failed!</strong> Please Enter correct credentials
+                <strong>Login failed!</strong> {apiError}
                 <button type="button" className="btn-close" data-bs-dismiss="alert" aria-label="Close" onClick={closeMessage} />
             </div>
 
@@ -108,8 +116,5 @@ const LoginComponent = () => {
     );
 }
 
-const closeMessage = (event) => {
-    this.setLoginStatus(true);
-}
 
 export default LoginComponent;
