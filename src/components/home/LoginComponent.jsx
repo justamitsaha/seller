@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
+import { useNavigate } from "react-router-dom";
 import { validateEmail, validatePassword } from '../shared/util.js';
+import config from '../../config.js';
 
 
 const LoginComponent = () => {
@@ -46,7 +48,34 @@ const LoginComponent = () => {
         setShowError(true);
     }
 
+    const navigate = useNavigate();
 
+    const handleSubmit = (event) => {
+        const URL = config.hostname + config.authentication + '/login'
+        var payload = {
+            "password": email,
+            "userName": password
+        };
+        const requestOptions = {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(payload)
+        };
+        fetch(URL, requestOptions)
+            .then(res => res.json())
+            .then(
+                (result) => {
+                    if (!result.response) {
+                        this.setState({ ['loginStatus']: false });
+                    } else {
+                        debugger;
+                    }
+                },
+                (error) => {
+                    navigate('/dashboard');
+                }
+            )
+    }
 
     return (
         <div className="pt-4">
@@ -77,34 +106,6 @@ const LoginComponent = () => {
 
         </div>
     );
-}
-
-
-
-
-const handleSubmit = (event) => {
-    const URL = '/login';
-    var payload = {
-        "password": this.state.password,
-        "userName": this.state.email
-    };
-    const requestOptions = {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(payload)
-    };
-    fetch(URL, requestOptions)
-        .then(res => res.json())
-        .then(
-            (result) => {
-                if (!result.response) {
-                    this.setState({ ['loginStatus']: false });
-                }
-            },
-            (error) => {
-                debugger;
-            }
-        )
 }
 
 const closeMessage = (event) => {

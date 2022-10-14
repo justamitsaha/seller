@@ -6,6 +6,7 @@ import 'bootstrap/dist/css/bootstrap.css';
 import './config.js';
 import HomeComponent from './components/home/HomeComponent';
 import NavbarComponent from './components/shared/navbarComponents';
+import DashboardComponent from './components/secured/DashboardComponent';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -15,9 +16,9 @@ root.render(
     <BrowserRouter>
       <Routes>
         <Route path='/' element={<HomeComponent />} />
+        <Route path='/dashboard' element={<DashboardComponent />} />
       </Routes>
     </BrowserRouter>
-    <HomeComponent></HomeComponent>
   </React.StrictMode>
 );
 
