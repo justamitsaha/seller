@@ -1,0 +1,39 @@
+.navbar {
+    height: 8vh;
+}
+
+section {
+    height: 92vh;
+}
+
+.home-container {
+    background-image: url(./images/home.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100%;
+}
+
+.home-tab-section {
+    background-color: white;
+    padding: 6%;
+    box-shadow:
+        inset 5px 5px 10px #000000,
+        inset -5px -5px 10px #000000;
+
+}
+
+.tab-button {
+    border-radius: 0 !important;
+}
+
+.tabselected {
+    background-color: white !important;
+    color: black !important;
+}
+
+.error {
+    color: #db2269;
+    font-size: 0.625em;
+    display: relative;
+}
