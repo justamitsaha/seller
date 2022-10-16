@@ -71,7 +71,7 @@ const LoginComponent = () => {
             .then(
                 (result) => {
                     if (result.response) {
-                        navigate('/dashboard');
+                        navigate('/addProduct');
                     } else {
                         setLoginStatus(false);
                         setApiError("Your user Id and password did not matched");

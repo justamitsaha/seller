@@ -2,7 +2,7 @@
     height: 8vh;
 }
 
-section {
+.homeSection {
     height: 92vh;
 }
 
@@ -36,4 +36,17 @@ section {
     color: #db2269;
     font-size: 0.625em;
     display: relative;
+}
+
+.custom-form-item {
+    height: 6vh;
+    width: 100%;
+}
+
+.custom-dropdown {
+    border-color: rgb(206, 212, 218);
+}
+
+.custom-checkox {
+    border-color: rgb(206, 212, 218);
 }

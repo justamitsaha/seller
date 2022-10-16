@@ -9,7 +9,7 @@ function HomeComponent() {
     const [tabSelected, settabSelected] = useState("loginSelected");
 
     return (
-        <section>
+        <section className="homeSection">
             <div className="container-fluid text-center home-container pt-5 pb-5">
                 <div className="row">
                     <div className="col-sm-7">

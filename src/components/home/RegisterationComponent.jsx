@@ -109,7 +109,7 @@ const RegisterationComponent = () => {
             .then(
                 (result) => {
                     if (result.response) {
-                        navigate('/dashboard');
+                        navigate('/addProduct');
                     } else {
                         setRegisterStatus(false);
                         setApiError(result.status);
