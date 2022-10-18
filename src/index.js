@@ -8,6 +8,7 @@ import HomeComponent from './components/home/HomeComponent';
 import NavbarComponent from './components/shared/navbarComponents';
 import DashboardComponent from './components/secured/DashboardComponent';
 import AddProductComponenet from './components/secured/AddProductComponenet';
+import SideBarComponent from './components/shared/SideBarComponent';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

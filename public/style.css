@@ -4,6 +4,15 @@
 
 .homeSection {
     height: 92vh;
+
+}
+
+.pageSection {
+    margin-top: 8vh;
+}
+
+.sidebar {
+    float: left;
 }
 
 .home-container {
@@ -49,4 +58,42 @@
 
 .custom-checkox {
     border-color: rgb(206, 212, 218);
+}
+
+.starimage {
+    height: 18px;
+    width: 18px;
+    padding-bottom: 4px;
+}
+
+.custom-anchor {
+    text-decoration: none;
+    color: black;
+}
+
+.disbled-span {
+    color: #a79c9c !important;
+}
+
+.custom-flex {
+    width: 100% !important;
+    display: inline-block !important;
+}
+
+.dashboard-card {
+    width: 22% !important;
+    margin-right: 2%;
+    margin-top: 2px;
+    min-height: 22vh !important;
+}
+
+.product-title {
+    height: 6vh;
+}
+
+.custom-gyphicon {
+    color: white !important;
+    font-size: 60px;
+    color: lightblue;
+    text-shadow: 2px 2px 4px #000000;
 }

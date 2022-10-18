@@ -1,0 +1,56 @@
+{
+    "statusCode": 200,
+    "status": "SUCCESS",
+    "response": [
+        {
+            "productName": "HP DeskJet 2331 Multi-function Color Printer  (White, Purple, Ink Cartridge)",
+            "productImage": "https://rukminim1.flixcart.com/image/612/612/korijrk0/printer/c/s/f/deskjet-2331-hp-original-imag356w4gyxzjza.jpeg?q=70",
+            "productDetails": "White, Purple, Ink Cartridge",
+            "rating": 3.6,
+            "discountPrice": 18000,
+            "freeDelivery": true,
+            "actualPrice": 29000,
+            "productId": "1"
+        },
+        {
+            "productName": "HP DeskJet 2331 ",
+            "productImage": "https://rukminim1.flixcart.com/image/612/612/korijrk0/printer/c/s/f/deskjet-2331-hp-original-imag356w4gyxzjza.jpeg?q=70",
+            "productDetails": "White, Purple, Ink Cartridge",
+            "rating": 3.6,
+            "discountPrice": 18000,
+            "freeDelivery": false,
+            "actualPrice": 29000,
+            "productId": "2"
+        },
+        {
+            "productName": "HP DeskJet 2331 ",
+            "productImage": "https://rukminim1.flixcart.com/image/612/612/korijrk0/printer/c/s/f/deskjet-2331-hp-original-imag356w4gyxzjza.jpeg?q=70",
+            "productDetails": "White, Purple, Ink Cartridge",
+            "rating": 3.6,
+            "discountPrice": 18000,
+            "freeDelivery": false,
+            "actualPrice": 29000,
+            "productId": "3"
+        },
+        {
+            "productName": "HP DeskJet 2331 ",
+            "productImage": "https://rukminim1.flixcart.com/image/612/612/korijrk0/printer/c/s/f/deskjet-2331-hp-original-imag356w4gyxzjza.jpeg?q=70",
+            "productDetails": "White, Purple, Ink Cartridge",
+            "rating": 3.6,
+            "discountPrice": 18000,
+            "freeDelivery": false,
+            "actualPrice": 29000,
+            "productId": "4"
+        },
+        {
+            "productName": "HP DeskJet 2331 ",
+            "productImage": "https://rukminim1.flixcart.com/image/612/612/korijrk0/printer/c/s/f/deskjet-2331-hp-original-imag356w4gyxzjza.jpeg?q=70",
+            "productDetails": "White, Purple, Ink Cartridge",
+            "rating": 3.6,
+            "discountPrice": 18000,
+            "freeDelivery": false,
+            "actualPrice": 29000,
+            "productId": "5"
+        }
+    ]
+}
